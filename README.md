@@ -2,25 +2,45 @@
 
 A repo for practicing Python Django
 
+## Requirements
+- Python 3
+- Django
+
 ### Commands
-Install Django:
+Create a virtual environment for Django:
 ```
-pip3 install django
+# Install virtualenv
+pip install virtualenv
+
+# Navigate to the path where you went to store your virtual environments
+cd [path-to-environments]
+
+# Create a virtual environment
+virtualenv [envname] # create a Python 2 environment
+virtualenv -p python3 [envname] # for Python 3
+
+# Use the virtual environment
+source [envname]/bin/activate
+```
+
+Install Python dependencies
+```
+pip install -r requirement.txt
 ```
 
 To start a new project:
 ```
-django-admin startproject projectname
+django-admin startproject [projectname]
 ```
 
 To run the server:
 ```
-python3 manage.py runserver
+python manage.py runserver
 ```
 
 Start a new app inside the project folder
 ```
-python3 manage.py startapp appname
+python manage.py startapp [appname]
 ```
 
 To activate a newly created app, go to [projectname]/settings.py and add `'appname'` in the INSTALLED_APPS list.
