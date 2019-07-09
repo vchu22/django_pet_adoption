@@ -6,7 +6,7 @@ A repo for practicing Python Django
 - Python 3
 - Django
 
-### Commands
+## Commands
 Create a virtual environment for Django:
 ```
 # Install virtualenv
@@ -21,9 +21,12 @@ virtualenv -p python3 [envname] # for Python 3
 
 # Use the virtual environment
 source [envname]/bin/activate
+
+# Deactivate virtual environment
+deactivate
 ```
 
-Install Python dependencies
+Install Python dependencies:
 ```
 pip install -r requirement.txt
 ```
@@ -38,9 +41,22 @@ To run the server:
 python manage.py runserver
 ```
 
-Start a new app inside the project folder
+Start a new app inside the project folder:
 ```
 python manage.py startapp [appname]
 ```
 
 To activate a newly created app, go to [projectname]/settings.py and add `'appname'` in the INSTALLED_APPS list.
+
+### Migration
+When there are changes in the model, you need to first generate the migration files to make the database match the model:
+```
+python manage.py makemigrations
+```
+Then run migrations to make changes effective:
+```
+# Run all migrations
+python manage.py migrate
+# Run migrations on a specific app
+python manage.py migrate [appname] [number]
+```
