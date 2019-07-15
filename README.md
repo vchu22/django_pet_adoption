@@ -60,3 +60,10 @@ python manage.py migrate
 # Run migrations on a specific app
 python manage.py migrate [appname] [number]
 ```
+To import pet.csv data into the database, run:
+```
+python import.py
+```
+
+## Troubleshooting
+1. If encountered errors when running migration, delete everything except the `__init__.py` inside the `migrations` folder and then run `python manage.py makemigrations`.
