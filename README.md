@@ -1,4 +1,4 @@
-# djangopractice
+# django_pet_adoption
 
 A repo for practicing Python Django
 

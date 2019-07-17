@@ -1,6 +1,6 @@
 import csv, sys, os
 
-project_dir = os.getcwd() + '/djangopractice'
+project_dir = os.getcwd() + '/django_pet_adoption'
 sys.path.append(project_dir)
 os.environ['DJANGO_SETTINGS_MODULE'] = 'settings'
 
