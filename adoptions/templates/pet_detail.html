@@ -1,1 +1,8 @@
-pet detail
+{% extends 'base.html' %}
+    {% block content %}
+        <ul>
+            <li>{{ pet.name | capfirst }}</li>
+            <li>{{ pet.species }}<li>
+            <li>{{ pet.sex }}<li>
+        <ul>
+    {% endblock content %}

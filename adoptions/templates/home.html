@@ -1,1 +1,6 @@
-home
+{% extends 'base.html' %}
+    {% block content %}
+        {% for pet in pets %}
+            <li>{{ pet.name | capfirst }}<li>
+        {% endfor %}
+    {% endblock content %}
