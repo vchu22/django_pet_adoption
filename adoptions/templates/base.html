@@ -1,13 +1,21 @@
+{% load static %}
 <!DOCTYPE html>
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Adoption Center</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.png' %}"/>
 </head>
 
 <body>
-    <p>Animal Adoption Center</p>
-    {% block content %}
-    {% endblock content %}
+    <header>
+        <h1>Animal Adoption Center</h1>
+    </header>
+    <div id="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
 </body>
 </html>

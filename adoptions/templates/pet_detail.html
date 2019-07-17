@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
     {% block content %}
-        <div>
+        <div class="pet_detail">
             <h3>{{ pet.name | capfirst}}</h3>
             <p>{{ pet.species }}</p>
             {% if pet.breed %}
