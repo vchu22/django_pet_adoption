@@ -7,7 +7,8 @@ A repo for practicing Python Django
 - Django
 
 ## Commands
-Create a virtual environment for Django:
+Create a virtual environment for this project to separate its dependencies from other Python project.
+Below are the commands for virtualenv:
 ```
 # Install virtualenv
 pip install virtualenv
@@ -20,9 +21,9 @@ virtualenv [envname] # create a Python 2 environment
 virtualenv -p python3 [envname] # for Python 3
 
 # Use the virtual environment
-source [envname]/bin/activate
+source [path-to-envname]/bin/activate
 
-# Deactivate virtual environment
+# This will deactivate virtual environment
 deactivate
 ```
 
