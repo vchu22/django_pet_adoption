@@ -1,4 +1,4 @@
-# django_pet_adoption
+# Django Pet Adoption
 
 A repo for practicing Python Django
 
@@ -7,7 +7,7 @@ A repo for practicing Python Django
 - Django
 
 ## Commands
-Create a virtual environment for this project to separate its dependencies from other Python project.
+Create a virtual environment for this project to separate its dependencies from other Python projects.
 Below are the commands for virtualenv:
 ```
 # Install virtualenv
