@@ -29,7 +29,7 @@ deactivate
 
 Install Python dependencies:
 ```
-pip install -r requirement.txt
+pip install -r requirements.txt
 ```
 
 To start a new project:
