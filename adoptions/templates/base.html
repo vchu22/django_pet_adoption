@@ -1,11 +1,12 @@
 {% load static %}
+{% load sass_tags %}
 <!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Animal Adoption Center</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" type="text/css">
+    <link href="{% sass_src 'css/style.scss' %}" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="{% static 'images/logo.png' %}"/>
 </head>
 

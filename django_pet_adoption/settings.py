@@ -124,3 +124,12 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
+
+# SASS settings
+SASS_PROCESSOR_ROOT = os.path.join(BASE_DIR,'static')
+STATICFILES_FINDERS = [
+    'django.contrib.staticfiles.finders.FileSystemFinder',
+    'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'sass_processor.finders.CssFinder',
+]
+SASS_PROCESSOR_INCLUDE_FILE_PATTERN = r'^.+\.scss$'

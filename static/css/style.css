@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  body header {
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-repeat: space;
+    height: 500px; }
+    body header > h1 {
+      font-size: 48px;
+      color: black;
+      margin: 0;
+      text-align: center; }
+  body #content {
+    padding: auto 10%; }
+    body #content .pet {
+      background-color: bisque;
+      margin: 40px;
+      padding: 10px 40px; }
+      body #content .pet > a {
+        color: chocolate; }
+    body #content .pet_detail {
+      background-color: bisque;
+      margin: 40px 10%;
+      padding: 10px 40px; }
+
+/*# sourceMappingURL=style.css.map */
