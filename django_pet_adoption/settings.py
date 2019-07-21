@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'adoptions'
+    'adoptions',
+    'sass_processor'
 ]
 
 MIDDLEWARE = [
