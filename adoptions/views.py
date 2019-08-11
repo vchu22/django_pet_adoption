@@ -16,9 +16,11 @@ class VaccineListView(ListView):
          return self.queyset
 
 # Create your views here.
-def home(req):
-    pets = Pet.objects.all()
-    return render(req, 'home.html', {'pets': pets})
+class home(ListView):
+    template_name = 'home.html'
+    queyset = Pet.objects.all()
+    def get_queryset(self):
+        return self.queyset
 
 def pet_detail(req, id):
     try:
