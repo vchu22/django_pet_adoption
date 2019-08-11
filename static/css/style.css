@@ -23,5 +23,9 @@ body {
       background-color: bisque;
       margin: 40px 10%;
       padding: 10px 40px; }
+    body #content #vaccines_list {
+      background-color: bisque;
+      margin: 40px 10%;
+      padding: 10px 40px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,6 +1,19 @@
+from django.views.generic import (
+    CreateView,
+    DetailView,
+    ListView,
+    UpdateView,
+    DeleteView
+)
 from django.shortcuts import render
 from django.http import HttpResponse, Http404
-from .models import Pet
+from .models import Pet, Vaccine
+
+class VaccineListView(ListView):
+    template_name = 'vaccines.html'
+    queyset = Vaccine.objects.all()
+    def get_queryset(self):
+         return self.queyset
 
 # Create your views here.
 def home(req):
