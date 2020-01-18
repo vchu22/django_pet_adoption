@@ -20,6 +20,6 @@ from adoptions import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.home.as_view(), name='home'),
-    path('adoptions/<int:id>/', views.pet_detail, name='pet_detail'),
+    path('adoptions/<int:id>/', views.PetDetailView.as_view(), name='pet_detail'),
     path('vaccine/', views.VaccineListView.as_view(), name="vaccine_list")
 ]
